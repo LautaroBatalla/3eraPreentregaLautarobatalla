@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: 'Alumni Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centrado {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los campos del formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+label p {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de inicio de sesión */
+#loginButton {
+    background-color: #4285f4;
+}
+
+/* Estilos para el enlace de registro e inicio de sesión */
+.registrologin {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.registrologin button {
+    background: none;
+    border: none;
+    color: #4285f4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.registrologin button:hover {
+    text-decoration: none;
+}
+
+/* Estilos para el loader */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #333;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #333 transparent transparent transparent;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
